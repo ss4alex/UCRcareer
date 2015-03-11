@@ -13,5 +13,7 @@
     - npm install
     - mkdir /opt/resumes
     - chown -R vagrant:vagrant /opt/resumes
+    - echo "hello world"
   script:
     - mocha
+
