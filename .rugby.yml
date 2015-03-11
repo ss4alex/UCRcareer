@@ -2,6 +2,7 @@
   service:
     group: db
     type: mongo
+  config: etc/install/mongo-yaml.conf
 
 - name: UCRCareer
   service:
@@ -13,7 +14,6 @@
     - npm install
     - mkdir /opt/resumes
     - chown -R vagrant:vagrant /opt/resumes
-    - echo "hello world"
   script:
     - mocha
 
